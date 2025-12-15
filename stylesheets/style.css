@@ -88,12 +88,12 @@ body, html {
 }
 
 /* Main content wrapper - takes up available space */
-body > :not(.topnav):not(.footer) {
+body > :not(.topnav):not(footer) {
   flex: 1;
 }
 
 /* Footer styling */
-.footer {
+footer {
   background-color: #888;
   color: white;
   text-align: center;

@@ -89,8 +89,14 @@ body, html {
 }
 
 /* Main content wrapper - takes up available space */
-body > :not(.topnav):not(footer) {
-  flex: 1;
+body > .hero-image,
+body > section,
+body > main {
+  flex: 1 1 auto;
+}
+
+body > .topnav {
+  flex: 0 0 auto;
 }
 
 /* Footer styling */

@@ -1,1 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Terms and Conditions for Freddy Fazbear's Pizza">
+    <meta name="keywords" content="terms, conditions, agreement, entertainment">
+    <title>Terms & Conditions - Freddy Fazbear's Pizza</title>
+    <link type="text/css" rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+            x.className = "topnav";
+            }
+        }
+        
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert("Thank you for accepting our terms! We hope you survive the night... we mean, enjoy your visit!");
+        }
+    </script>
+</head>
+<body>
+    <!-- Navigation Bar at top-->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="page2.html">Menu</a>
+        <a href="page3.html">Reviews</a>
+        <a href="page4.html" class="active">Terms & Conditions</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+  </a>
+</div>
+    <!--Hero Banner -->
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Terms & Conditions</h1>
+            <p>Please read carefully before visiting</p>
+        </div>
+    </div>
+    
+    <!--Terms & Conditions Content-->
+    <main>
+        <div class="content-section">
+            <h2>Freddy Fazbear's Pizza Entertainment Agreement</h2>
+            
+            <div class="terms-content">
+                <h3>Terms of Service</h3>
+                <p><strong>Welcome to Freddy Fazbear's Pizza!</strong></p>
+                <p>By entering our establishment, you agree to the following terms and conditions:</p>
+                
+                <ol>
+                    <li><strong>Night Shift Disclaimer:</strong> Freddy Fazbear's Pizza is not responsible for injury or death occurring during after-hours visits. Please note that animatronics may wander freely after midnight.</li>
+                    <li><strong>Missing Children Policy:</strong> We are not liable for any children who may go missing on the premises. Please keep close supervision of all minors at all times.</li>
+                    <li><strong>Animatronic Interaction:</strong> While our animatronic characters are designed for entertainment, please do not touch or provoke them. They may mistake you for an endoskeleton without a suit.</li>
+                    <li><strong>Odor Notice:</strong> Any unusual odors coming from the animatronics are completely normal and not cause for concern. Management is aware of the situation.</li>
+                    <li><strong>Power Outage Protocol:</strong> In the unlikely event of a power outage, please remain calm and do not attempt to use flashlights or move around. The animatronics are attracted to light and sound.</li>
+                </ol>
+                
+                <p class="disclaimer">For more information about our establishment's history, please visit the <a href="https://fivenightsatfreddys.fandom.com/" target="_blank" rel="noopener noreferrer">Five Nights at Freddy's Wiki</a>.</p>
+            </div>
+            
+            <div class="form-container">
+                <h3>Agreement Confirmation</h3>
+                <p>Please confirm that you have read and understood our terms and conditions using <strong>all three</strong> methods below:</p>
+                
+                <form id="termsForm" onsubmit="return handleSubmit(event);">
+                    <!-- Method 1: Checkbox -->
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="checkbox-agree" required>
+                            I accept the terms and conditions (and understand the risks of night shifts)
+                        </label>
+                    </div>
+                    
+                    <!-- Method 2: Radio buttons -->
+                    <div class="form-group">
+                        <p><strong>Do you agree to hold Freddy Fazbear's Pizza harmless?</strong></p>
+                        <label class="radio-label">
+                            <input type="radio" name="radio-agree" value="yes" required>
+                            Yes, I agree
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="radio-agree" value="no">
+                            No, I decline (you won't be able to submit)
+                        </label>
+                    </div>
+                    
+                    <!-- Method 3: Text input for signature -->
+                    <div class="form-group">
+                        <label for="signature">Type your full name as electronic signature:</label>
+                        <input type="text" id="signature" name="signature" placeholder="Your Full Name" required>
+                    </div>
+                    
+                    <!-- Optional: Email for updates -->
+                    <div class="form-group">
+                        <label for="email">Email (optional - for special offers):</label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com">
+                    </div>
+                    
+                    <!-- Submit Button -->
+                    <div class="form-group">
+                        <button type="submit" class="submit-btn">I Accept All Terms</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <!--Footer-->
+    <footer>
+        <p>Created by Celia, 2025</p>
+    </footer>
+    
 
+</body>
+</html>

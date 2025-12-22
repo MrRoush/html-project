@@ -1,1 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact information for Freddy Fazbear's Pizza">
+    <meta name="keywords" content="contact, location, hours, phone">
+    <title>Contact Us - Freddy Fazbear's Pizza</title>
+    <link type="text/css" rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+            x.className = "topnav";
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Navigation Bar at top-->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="page2.html">Menu</a>
+        <a href="page3.html">Reviews</a>
+        <a href="page4.html">Terms & Conditions</a>
+        <a href="contact.html" class="active">Contact Us</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+  </a>
+</div>
+    <!--Hero Banner -->
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>Contact Us</h1>
+        </div>
+    </div>
+    
+    <!--Contact Page Content-->
+    <main>
+        <div class="content-section">
+            <h2>Get in Touch</h2>
+            <p>Visit us at Freddy Fazbear's Pizza! We're here to serve you with delicious food and family entertainment.</p>
+            
+            <h3>Contact Information</h3>
+            <table class="contact-table">
+                <thead>
+                    <tr>
+                        <th>Location</th>
+                        <th>Phone</th>
+                        <th>Hours</th>
+                        <th>Manager</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Downtown Location</td>
+                        <td>(555) 123-4567</td>
+                        <td>Mon-Fri: 11am-10pm<br>Sat-Sun: 10am-11pm</td>
+                        <td>Michael Schmidt</td>
+                    </tr>
+                    <tr>
+                        <td>Westside Location</td>
+                        <td>(555) 234-5678</td>
+                        <td>Mon-Fri: 11am-9pm<br>Sat-Sun: 10am-10pm</td>
+                        <td>Jeremy Fitzgerald</td>
+                    </tr>
+                    <tr>
+                        <td>Eastside Location</td>
+                        <td>(555) 345-6789</td>
+                        <td>Mon-Sun: 11am-10pm</td>
+                        <td>Fritz Smith</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="external-links">
+                <h3>Find Us Online</h3>
+                <p>Visit our <a href="https://fivenightsatfreddys.fandom.com/" target="_blank" rel="noopener noreferrer">wiki page</a> to learn more about our history.</p>
+                <p>Follow us on social media for updates and special offers!</p>
+            </div>
+        </div>
+    </main>
+    
+    <!--Footer-->
+    <footer>
+        <p>Created by Celia, 2025</p>
+    </footer>
+    
 
+</body>
+</html>
